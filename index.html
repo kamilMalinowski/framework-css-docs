@@ -4,41 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/temporary_logo.svg" type="image/x-icon">
     <link href="./dist/output.css" rel="stylesheet" />
     <title>Framework CSS | Home</title>
   </head>
-  <body>
-    <header class="p-5 bg-emerald-300">
+  <body class="font-mono">
+    <header class="p-5 bg-emerald-300 border-b-4 border-black">
       <div class="flex justify-between items-center max-w-5xl mx-auto">
         <a href="#" class="">
-          <img src="https://alpinejs.dev/alpine_long.svg" alt="logo" class="w-full h-9"/>
+          <img src="img/temporary_logo.svg" alt="logo" class="w-full h-9" />
         </a>
         <a href="docs.html" class="block text-lg font-bold">Documentation</a>
       </div>
     </header>
-    <main class="max-w-5xl mx-auto">
-      <section class="p-5 grid text-center">
-        <h1 class="pt-20 pb-8 text-5xl font-bold text-center w-90 mx-auto">
-          The CSS Framework 
-          <strong class="font-bold text-emerald-300">for Web Developers</strong>
-        </h1>
-        <p class="pb-8 text-center text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione totam
-          neque laboriosam iste modi impedit labore iure odit, cupiditate animi
-          veniam quod eos harum nam natu!
-        </p>
-        <a href="#" class="p-2 bg-emerald-300 mb-4 w-96 mx-auto block font-bold text-white">GET STARTED</a>
-        <a href="#" class="p-2 border-2 border-emerald-300 text-emerald-300 bg-white mb-3 w-96 mx-auto block font-bold">ABOUT ME</a>
-      </section>
-      <section class="pt-20 pb-6 px-6 text-left">
-        <h2 class="py-6 text-3xl font-bold">Headers</h2>
-        <div class="flex justify-between items-start">
-          <p class="text-lg">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, quasi nostrum, eos quo quod neque sunt officiis ab libero inventore omnis at eligendi atque! Porro blanditiis accusamus aperiam. Temporibus, asperiores!
+    <main class="p-5">
+      <div class="max-w-5xl mx-auto">
+        <section class="grid text-center">
+          <h1
+            class="pt-20 pb-8 text-5xl md:text-6xl font-bold text-center w-90 mx-auto"
+          >
+            The CSS Framework
+            <strong class="font-bold text-emerald-300">
+              for Web Developers
+            </strong>
+          </h1>
+          <p class="pb-8 text-center text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            totam neque laboriosam iste
+            <span class="bg-emerald-300 px-1">modi</span>
+            impedit labore iure odit, cupiditate animi veniam quod eos harum nam
+            natu!
           </p>
-          <img class="" src="img/temp.svg" alt="temp">
-        </div>
-      </section> 
+          <div class="flex gap-5 justify-center">
+            <a
+              href="#"
+              class="p-3 transition-all rounded-lg border border-b-4 border-black bg-emerald-300 w-full md:w-32 block font-bold text-black hover:-translate-y-0.5"
+            >
+              GET STARTED
+            </a>
+            <a
+              href="#"
+              class="p-3 transition-all rounded-lg border border-b-4 border-emerald-300 text-emerald-300 bg-white w-full md:w-80 block font-bold hover:-translate-y-0.5"
+            >
+              ABOUT ME
+            </a>
+          </div>
+        </section>
+        <section class="pt-20 pb-6 text-left">
+          <h2 class="py-6 text-3xl font-bold">Headers</h2>
+          <div
+            class="flex justify-between items-start gap-8 flex-col md:flex-row"
+          >
+            <p class="text-lg">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
+              quasi nostrum, eos quo quod neque sunt officiis ab libero
+              inventore omnis at eligendi atque! Porro blanditiis accusamus
+              aperiam. Temporibus, asperiores!
+            </p>
+            <div class=" border-2 border-b-4 transition-all border-emerald-300 rounded-lg w-full rotate-0 hover:-rotate-6 hover:scale-95">
+              <img class="rounded-lg block w-full h-auto rotate-6" src="img/temp.svg" alt="temp" />
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="text-center p-8 border border-t-emerald-300">
       <p class="text-xs">Copyright © 2022 Kamil Malinowski</p>
